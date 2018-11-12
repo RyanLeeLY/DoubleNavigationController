@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DoubleNavigationController_Example' do
+  pod 'DoubleNavigationController', :path => '../'
+
+  target 'DoubleNavigationController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
