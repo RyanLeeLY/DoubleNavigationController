@@ -7,8 +7,10 @@
 //
 
 #import "DBNViewController.h"
+#import "DBNSecondViewController.h"
+#import <DoubleNavigationController/DoubleNavigationControllerProtocol.h>
 
-@interface DBNViewController ()
+@interface DBNViewController () <DoubleNavigationControllerProtocol>
 
 @end
 
@@ -17,13 +19,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor orangeColor];
+    self.title = @"Main";
+    
+    UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 200, 100, 40)];
+    [self.view addSubview:testButton];
+    [testButton setTitle:@"next" forState:UIControlStateNormal];
+    [testButton addTarget:self action:@selector(eventFromButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)dbn_configNavigationController:(UINavigationController *)navigationController {
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)eventFromButton:(UIButton *)sender {
+    DBNSecondViewController *controller = [[DBNSecondViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

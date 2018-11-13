@@ -7,12 +7,18 @@
 //
 
 #import "DBNAppDelegate.h"
+#import "DBNViewController.h"
 
 @implementation DBNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController:[[DBNViewController alloc] init]];
+    UIWindow *keyWindow = [[UIWindow alloc] init];
+    self.window = keyWindow;
+    self.window.rootViewController = rootController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

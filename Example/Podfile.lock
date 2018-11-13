@@ -1,0 +1,16 @@
+PODS:
+  - DoubleNavigationController (0.1.0)
+
+DEPENDENCIES:
+  - DoubleNavigationController (from `../`)
+
+EXTERNAL SOURCES:
+  DoubleNavigationController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DoubleNavigationController: 65ec6c9c3153ae1d121999d54d8a1415b1e13066
+
+PODFILE CHECKSUM: fc634b882eb6c9c821418f5b31c9dd382309bfc3
+
+COCOAPODS: 1.5.3

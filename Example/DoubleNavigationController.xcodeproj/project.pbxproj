@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0DEC9291F5D6C28A5F7A5105 /* Pods_DoubleNavigationController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03B655D33A2E1B9579FA5DF /* Pods_DoubleNavigationController_Tests.framework */; };
+		250A031121997EC900727E3A /* DBNSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250A031021997EC900727E3A /* DBNSecondViewController.m */; };
+		25111ED2219ABC97003097CD /* DBNThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25111ED1219ABC97003097CD /* DBNThirdViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +24,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		F6E083B7DC47A5C6A1AA3D09 /* Pods_DoubleNavigationController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB0152A6F9DE113A768590A /* Pods_DoubleNavigationController_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		250A030F21997EC900727E3A /* DBNSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNSecondViewController.h; sourceTree = "<group>"; };
+		250A031021997EC900727E3A /* DBNSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNSecondViewController.m; sourceTree = "<group>"; };
+		25111ED0219ABC97003097CD /* DBNThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNThirdViewController.h; sourceTree = "<group>"; };
+		25111ED1219ABC97003097CD /* DBNThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNThirdViewController.m; sourceTree = "<group>"; };
 		40E35F57CC84AAC26A10270A /* Pods-DoubleNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleNavigationController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleNavigationController_Tests/Pods-DoubleNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DB0152A6F9DE113A768590A /* Pods_DoubleNavigationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoubleNavigationController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* DoubleNavigationController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleNavigationController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,12 +66,11 @@
 		6788A18E1429E981D5C56B88 /* Pods-DoubleNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleNavigationController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleNavigationController_Tests/Pods-DoubleNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C5DB44E46985CFBF984781 /* Pods-DoubleNavigationController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleNavigationController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleNavigationController_Example/Pods-DoubleNavigationController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9101CDD17B61390ED87E885E /* Pods-DoubleNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleNavigationController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleNavigationController_Example/Pods-DoubleNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B03B655D33A2E1B9579FA5DF /* Pods_DoubleNavigationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoubleNavigationController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9056AB781725E961B202B9F /* DoubleNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DoubleNavigationController.podspec; path = ../DoubleNavigationController.podspec; sourceTree = "<group>"; };
-		F52FAE9048A369330323DBA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FFA092CD8FEE26161D7B0DA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B9056AB781725E961B202B9F /* DoubleNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DoubleNavigationController.podspec; path = ../DoubleNavigationController.podspec; sourceTree = "<group>"; };
+		F52FAE9048A369330323DBA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FFA092CD8FEE26161D7B0DA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +138,12 @@
 			children = (
 				6003F59C195388D20070C39A /* DBNAppDelegate.h */,
 				6003F59D195388D20070C39A /* DBNAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DBNViewController.h */,
 				6003F5A6195388D20070C39A /* DBNViewController.m */,
+				250A030F21997EC900727E3A /* DBNSecondViewController.h */,
+				250A031021997EC900727E3A /* DBNSecondViewController.m */,
+				25111ED0219ABC97003097CD /* DBNThirdViewController.h */,
+				25111ED1219ABC97003097CD /* DBNThirdViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -247,6 +254,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = yao.li;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 88XD449ZEP;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -276,7 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -357,7 +366,9 @@
 			files = (
 				6003F59E195388D20070C39A /* DBNAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DBNViewController.m in Sources */,
+				25111ED2219ABC97003097CD /* DBNThirdViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				250A031121997EC900727E3A /* DBNSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,11 +496,12 @@
 			baseConfigurationReference = 79C5DB44E46985CFBF984781 /* Pods-DoubleNavigationController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88XD449ZEP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubleNavigationController/DoubleNavigationController-Prefix.pch";
 				INFOPLIST_FILE = "DoubleNavigationController/DoubleNavigationController-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yaoli.cocoapods.demo.DoubleNavigationController-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -500,11 +512,12 @@
 			baseConfigurationReference = 9101CDD17B61390ED87E885E /* Pods-DoubleNavigationController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88XD449ZEP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubleNavigationController/DoubleNavigationController-Prefix.pch";
 				INFOPLIST_FILE = "DoubleNavigationController/DoubleNavigationController-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yaoli.cocoapods.demo.DoubleNavigationController-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
