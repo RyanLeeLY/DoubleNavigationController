@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIViewController (DoubleNavigationController) <DoubleNavigationControllerProtocol>
-@property (strong, nonatomic) UIView *dbn_fakeNavigationBar;
-@property (assign, nonatomic) BOOL dbn_viewAppeared;
-
-- (void)setDbn_secondNavigationBarHidden:(BOOL)hidden;
+@interface UIViewController (DoubleNavigationController)
+- (void)dbn_setNeedsUpdateNavigation;
+- (void)dbn_performBatchUpdates:(void(^)(UINavigationController * _Nullable navigationController))updates;
 @end
 
 NS_ASSUME_NONNULL_END

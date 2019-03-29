@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DEC9291F5D6C28A5F7A5105 /* Pods_DoubleNavigationController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03B655D33A2E1B9579FA5DF /* Pods_DoubleNavigationController_Tests.framework */; };
 		250A031121997EC900727E3A /* DBNSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250A031021997EC900727E3A /* DBNSecondViewController.m */; };
 		25111ED2219ABC97003097CD /* DBNThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25111ED1219ABC97003097CD /* DBNThirdViewController.m */; };
+		25749A25224DECE900160723 /* DBNFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25749A24224DECE900160723 /* DBNFourthViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -24,7 +24,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		F6E083B7DC47A5C6A1AA3D09 /* Pods_DoubleNavigationController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB0152A6F9DE113A768590A /* Pods_DoubleNavigationController_Example.framework */; };
+		9FEE848E43CF466EFBEDF944 /* libPods-DoubleNavigationController_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D59CE0716D8FBE7A9E6AAF /* libPods-DoubleNavigationController_Example.a */; };
+		CA917A2C761C0F5925498B93 /* libPods-DoubleNavigationController_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2555A8AB70CD9958F648AAAA /* libPods-DoubleNavigationController_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,10 @@
 		250A031021997EC900727E3A /* DBNSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNSecondViewController.m; sourceTree = "<group>"; };
 		25111ED0219ABC97003097CD /* DBNThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNThirdViewController.h; sourceTree = "<group>"; };
 		25111ED1219ABC97003097CD /* DBNThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNThirdViewController.m; sourceTree = "<group>"; };
+		2555A8AB70CD9958F648AAAA /* libPods-DoubleNavigationController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoubleNavigationController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25749A23224DECE900160723 /* DBNFourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNFourthViewController.h; sourceTree = "<group>"; };
+		25749A24224DECE900160723 /* DBNFourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBNFourthViewController.m; sourceTree = "<group>"; };
 		40E35F57CC84AAC26A10270A /* Pods-DoubleNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleNavigationController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleNavigationController_Tests/Pods-DoubleNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4DB0152A6F9DE113A768590A /* Pods_DoubleNavigationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoubleNavigationController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* DoubleNavigationController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleNavigationController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,12 +66,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		64D59CE0716D8FBE7A9E6AAF /* libPods-DoubleNavigationController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoubleNavigationController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6788A18E1429E981D5C56B88 /* Pods-DoubleNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleNavigationController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleNavigationController_Tests/Pods-DoubleNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C5DB44E46985CFBF984781 /* Pods-DoubleNavigationController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleNavigationController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleNavigationController_Example/Pods-DoubleNavigationController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9101CDD17B61390ED87E885E /* Pods-DoubleNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleNavigationController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleNavigationController_Example/Pods-DoubleNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B03B655D33A2E1B9579FA5DF /* Pods_DoubleNavigationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoubleNavigationController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9056AB781725E961B202B9F /* DoubleNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DoubleNavigationController.podspec; path = ../DoubleNavigationController.podspec; sourceTree = "<group>"; };
+		B9056AB781725E961B202B9F /* DoubleNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DoubleNavigationController.podspec; path = ../DoubleNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F52FAE9048A369330323DBA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FFA092CD8FEE26161D7B0DA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +84,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F6E083B7DC47A5C6A1AA3D09 /* Pods_DoubleNavigationController_Example.framework in Frameworks */,
+				9FEE848E43CF466EFBEDF944 /* libPods-DoubleNavigationController_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +95,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				0DEC9291F5D6C28A5F7A5105 /* Pods_DoubleNavigationController_Tests.framework in Frameworks */,
+				CA917A2C761C0F5925498B93 /* libPods-DoubleNavigationController_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +130,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				4DB0152A6F9DE113A768590A /* Pods_DoubleNavigationController_Example.framework */,
-				B03B655D33A2E1B9579FA5DF /* Pods_DoubleNavigationController_Tests.framework */,
+				64D59CE0716D8FBE7A9E6AAF /* libPods-DoubleNavigationController_Example.a */,
+				2555A8AB70CD9958F648AAAA /* libPods-DoubleNavigationController_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +147,8 @@
 				250A031021997EC900727E3A /* DBNSecondViewController.m */,
 				25111ED0219ABC97003097CD /* DBNThirdViewController.h */,
 				25111ED1219ABC97003097CD /* DBNThirdViewController.m */,
+				25749A23224DECE900160723 /* DBNFourthViewController.h */,
+				25749A24224DECE900160723 /* DBNFourthViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -214,7 +219,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				A3CA979496AC398EB927C68C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +271,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,24 +308,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A3CA979496AC398EB927C68C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DoubleNavigationController_Example/Pods-DoubleNavigationController_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DoubleNavigationController/DoubleNavigationController.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleNavigationController.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoubleNavigationController_Example/Pods-DoubleNavigationController_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A6C2DF54F447173292DAFF87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +356,7 @@
 				25111ED2219ABC97003097CD /* DBNThirdViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				250A031121997EC900727E3A /* DBNSecondViewController.m in Sources */,
+				25749A25224DECE900160723 /* DBNFourthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,321 +7,263 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		186EA91D288A73F39C1534FBB031A35B /* DNBMethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FED0E0ACA92D19A1E1ADF98A28B79A /* DNBMethodSwizzle.m */; };
-		1880D2A15946C7E88C0580D5FDBE19E9 /* Pods-DoubleNavigationController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C204574539D3F518983BBCF07956082 /* Pods-DoubleNavigationController_Example-dummy.m */; };
-		2AD7F1DC89BD9B94AEE5CE7578A3EE37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2F9B27522CC28C2EC42A76A411629F7C /* UINavigationController+DoubleNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18655EB3B6E38EE1F6892BA4E845FCE /* UINavigationController+DoubleNavigationController.m */; };
-		4832658B2041952B242B0015A496ABEC /* DNBMethodSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 392E2B4D263B71BC3670BC132636567B /* DNBMethodSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7810DEFBA5BA21E184C5057392F64F10 /* DoubleNavigationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D295A734C0854C99C4B844763C0B4DFE /* DoubleNavigationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8741862C57279260301EDED8BE232F98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		992D0BBDB69AE327D0B182B26480A992 /* DoubleNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0D13B256224CC0979BCB4AFC2090A /* DoubleNavigationController-dummy.m */; };
-		9AEFA55975E3031875E02A571009C790 /* Pods-DoubleNavigationController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E64F1E469C0C08B4CC5E211EBCA41C67 /* Pods-DoubleNavigationController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B1988C71A9D58A37418E001C8801861 /* UIViewController+DoubleNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A0A0ACB614EF3BF103B981F16B0321 /* UIViewController+DoubleNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B86B18B55478DC2F2B49C1A9D3B0A33B /* Pods-DoubleNavigationController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A3ED37BE8F28542C0990992BF144AC /* Pods-DoubleNavigationController_Tests-dummy.m */; };
-		C0F765BEAC92AB65607122161BB527A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C24EFDE8558598211E30492B9B22680A /* UINavigationController+DoubleNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1644E0C38AD0DA2BC2C0989E67700EE4 /* UINavigationController+DoubleNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6E2AD1585D5E5E2B13814D3C1A45BC2 /* Pods-DoubleNavigationController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16827A9E901594AE8DDD747D3C465757 /* Pods-DoubleNavigationController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2FAB2D971AFA5DEA5C6A4C1C4233A98 /* UIViewController+DoubleNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B497CA19936EA70A09DDDB923A1023 /* UIViewController+DoubleNavigationController.m */; };
-		F7CC3435837A702DA5AA173DDAD24463 /* DoubleNavigationControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A769767B0D5D5EFB96BA4831AE08B240 /* DoubleNavigationControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1057481B268D3FD3AE6C5F83A66BD5E6 /* DNBMethodSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8C09D5550921327EB6CB9DC22A1252 /* DNBMethodSwizzle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25749A28224E095900160723 /* DBNNavigationDecoration.h in Headers */ = {isa = PBXBuildFile; fileRef = 25749A26224E095900160723 /* DBNNavigationDecoration.h */; };
+		25749A29224E095900160723 /* DBNNavigationDecoration.m in Sources */ = {isa = PBXBuildFile; fileRef = 25749A27224E095900160723 /* DBNNavigationDecoration.m */; };
+		33DB2A9981D89307C4C5B259A5B28689 /* Pods-DoubleNavigationController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1130820941A47A9C18482BD72BD08A1 /* Pods-DoubleNavigationController_Tests-dummy.m */; };
+		35B1D14D100A5A5DE530EB23D7FAF2B8 /* DoubleNavigationControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EC64D98B2E5091E1E336F92D7B337BD8 /* DoubleNavigationControllerProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55CF3254887DC4DC9A26E20DF0DB8D31 /* DNBMethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A32ACD06FB1C27B0A653EEE962B9CF /* DNBMethodSwizzle.m */; };
+		AA615D038F5D3DC09AC53509E1ADD8D5 /* Pods-DoubleNavigationController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F0AE10D6BC207B077996858CCBAAA /* Pods-DoubleNavigationController_Example-dummy.m */; };
+		AD24AA3BF76409FF8BDD6D19B1115B8D /* UIViewController+DoubleNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1503BE9FFDD34D9E2DD8FA1CCE3E06FB /* UIViewController+DoubleNavigationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3DB9F80DD42126E775C8CB7C5C44773 /* UIViewController+DoubleNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AB2E67F2F5FEA693D48506E710858E /* UIViewController+DoubleNavigationController.m */; };
+		DE8A17F12660FAA72C8DA7D1BE58473F /* DoubleNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A22A369E4AE94AA83582B3E808BCB2F6 /* DoubleNavigationController-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		48EEF4A3801087D5186DC13B5CD255F7 /* PBXContainerItemProxy */ = {
+		1F76216AE9032B388D6F81F9F7045366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AF9F4067C2733107E2F7C3FBF48463B8;
+			remoteGlobalIDString = 46AB6BBC4D8B06593AD2FC93370981A3;
 			remoteInfo = DoubleNavigationController;
 		};
-		863869B695378B8EEA6353CAC738FD6D /* PBXContainerItemProxy */ = {
+		5E5497F882B8C7AC772E1CFA9129DD97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 73A82DD44A255D60844FCD91C137AB57;
+			remoteGlobalIDString = 6671104E631435A0999EC4B762BECD44;
 			remoteInfo = "Pods-DoubleNavigationController_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02183F6CEEB1E9BE7150469DA7982024 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02AF1FB200B1387046CAA1C5A651B7E1 /* Pods-DoubleNavigationController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoubleNavigationController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		09739AEE56FD2F5679C902E3178B8E9E /* Pods-DoubleNavigationController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DoubleNavigationController_Example.modulemap"; sourceTree = "<group>"; };
-		1644E0C38AD0DA2BC2C0989E67700EE4 /* UINavigationController+DoubleNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+DoubleNavigationController.h"; path = "DoubleNavigationController/Classes/UINavigationController+DoubleNavigationController.h"; sourceTree = "<group>"; };
-		16827A9E901594AE8DDD747D3C465757 /* Pods-DoubleNavigationController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DoubleNavigationController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		17B497CA19936EA70A09DDDB923A1023 /* UIViewController+DoubleNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+DoubleNavigationController.m"; path = "DoubleNavigationController/Classes/UIViewController+DoubleNavigationController.m"; sourceTree = "<group>"; };
-		17E0D13B256224CC0979BCB4AFC2090A /* DoubleNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DoubleNavigationController-dummy.m"; sourceTree = "<group>"; };
-		1C204574539D3F518983BBCF07956082 /* Pods-DoubleNavigationController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoubleNavigationController_Example-dummy.m"; sourceTree = "<group>"; };
-		25A3ED37BE8F28542C0990992BF144AC /* Pods-DoubleNavigationController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoubleNavigationController_Tests-dummy.m"; sourceTree = "<group>"; };
-		31B29DAF4AF6305143B53E5721831B15 /* Pods-DoubleNavigationController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DoubleNavigationController_Tests.modulemap"; sourceTree = "<group>"; };
-		34473F2DFC6C6D23F99C3BB5F2121B4F /* Pods-DoubleNavigationController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleNavigationController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		37761B171C480EE282337A809F8430E5 /* Pods-DoubleNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		392E2B4D263B71BC3670BC132636567B /* DNBMethodSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DNBMethodSwizzle.h; path = DoubleNavigationController/Classes/DNBMethodSwizzle.h; sourceTree = "<group>"; };
-		44A0A0ACB614EF3BF103B981F16B0321 /* UIViewController+DoubleNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+DoubleNavigationController.h"; path = "DoubleNavigationController/Classes/UIViewController+DoubleNavigationController.h"; sourceTree = "<group>"; };
-		46FED0E0ACA92D19A1E1ADF98A28B79A /* DNBMethodSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DNBMethodSwizzle.m; path = DoubleNavigationController/Classes/DNBMethodSwizzle.m; sourceTree = "<group>"; };
-		478CA7302F1D25DCC69341EB1D222EE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		4C5FF411DEC0A53F2BD3DB095CEEA551 /* Pods-DoubleNavigationController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoubleNavigationController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		554CFCFDAB3E8C4B4A43815F4E11A3E1 /* Pods-DoubleNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6758CD3E51E78E0F44C0C84C4FC3C9DE /* Pods-DoubleNavigationController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleNavigationController_Example-resources.sh"; sourceTree = "<group>"; };
-		8671B223AC939D1416CEEA858BEB8434 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		882C644834F4993CA6F15149DC645EDF /* Pods_DoubleNavigationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DoubleNavigationController_Example.framework; path = "Pods-DoubleNavigationController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		924780AE0E0935EA9E064311EB678197 /* Pods-DoubleNavigationController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleNavigationController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A769767B0D5D5EFB96BA4831AE08B240 /* DoubleNavigationControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoubleNavigationControllerProtocol.h; path = DoubleNavigationController/Classes/DoubleNavigationControllerProtocol.h; sourceTree = "<group>"; };
-		A93775EC7881FFE9E9CAD139B8E124DD /* DoubleNavigationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DoubleNavigationController.xcconfig; sourceTree = "<group>"; };
-		B668382754699CC4A6D5B79D644D1804 /* Pods-DoubleNavigationController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleNavigationController_Tests-resources.sh"; sourceTree = "<group>"; };
-		C18655EB3B6E38EE1F6892BA4E845FCE /* UINavigationController+DoubleNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+DoubleNavigationController.m"; path = "DoubleNavigationController/Classes/UINavigationController+DoubleNavigationController.m"; sourceTree = "<group>"; };
-		D295A734C0854C99C4B844763C0B4DFE /* DoubleNavigationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DoubleNavigationController-umbrella.h"; sourceTree = "<group>"; };
-		DAE305F51C00C85BA921BACC2C37F3AF /* Pods-DoubleNavigationController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoubleNavigationController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E23C22CB3B18B64AFF6367F974358505 /* Pods_DoubleNavigationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DoubleNavigationController_Tests.framework; path = "Pods-DoubleNavigationController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E341BEBC9237997C8895E461FE917AC4 /* DoubleNavigationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DoubleNavigationController.modulemap; sourceTree = "<group>"; };
-		E59FCDC0A7B242083D75F9CF9E86E2A4 /* DoubleNavigationController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DoubleNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E64F1E469C0C08B4CC5E211EBCA41C67 /* Pods-DoubleNavigationController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DoubleNavigationController_Example-umbrella.h"; sourceTree = "<group>"; };
-		E738DD3909447BB7F887A7C87E89AC7C /* Pods-DoubleNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EFF03B57B7E205731D09DCE0FC5541C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F08632DB34D9DBA444A5587826C7F2F3 /* Pods-DoubleNavigationController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleNavigationController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F17C53B7C6D41A48F2F50C34EDC5E53F /* DoubleNavigationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DoubleNavigationController-prefix.pch"; sourceTree = "<group>"; };
-		F279FACB3D4F653613226FF5BAFB89F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F73BCC18D12296C5FFB629C4AEF3DAB0 /* Pods-DoubleNavigationController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoubleNavigationController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FE1361E29D825DD69A73B4E35E566CFB /* DoubleNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DoubleNavigationController.framework; path = DoubleNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0203DE9CD522508A32D603A8105E6D30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		07A32ACD06FB1C27B0A653EEE962B9CF /* DNBMethodSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DNBMethodSwizzle.m; path = DoubleNavigationController/Classes/DNBMethodSwizzle.m; sourceTree = "<group>"; };
+		112E9D6EB68A5519EC05B252CF81A3B0 /* DoubleNavigationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DoubleNavigationController-prefix.pch"; sourceTree = "<group>"; };
+		115D6F29BCC4157BDE899F192705B803 /* Pods-DoubleNavigationController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleNavigationController_Tests-resources.sh"; sourceTree = "<group>"; };
+		1417AB53722A5181E7703E431759BBAA /* DoubleNavigationController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DoubleNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1503BE9FFDD34D9E2DD8FA1CCE3E06FB /* UIViewController+DoubleNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+DoubleNavigationController.h"; path = "DoubleNavigationController/Classes/UIViewController+DoubleNavigationController.h"; sourceTree = "<group>"; };
+		1B6A9985F4B14CAAA07ADC8843BB995E /* Pods-DoubleNavigationController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleNavigationController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		22A5AE84BE842E515B65AD1B6384D526 /* Pods-DoubleNavigationController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoubleNavigationController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		25749A26224E095900160723 /* DBNNavigationDecoration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DBNNavigationDecoration.h; path = DoubleNavigationController/Classes/DBNNavigationDecoration.h; sourceTree = "<group>"; };
+		25749A27224E095900160723 /* DBNNavigationDecoration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DBNNavigationDecoration.m; path = DoubleNavigationController/Classes/DBNNavigationDecoration.m; sourceTree = "<group>"; };
+		39DA895B2774D5CD61A88C9F83FAFBF3 /* Pods-DoubleNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3C956FC2ABA859679016F3D926649960 /* libDoubleNavigationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDoubleNavigationController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8C09D5550921327EB6CB9DC22A1252 /* DNBMethodSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DNBMethodSwizzle.h; path = DoubleNavigationController/Classes/DNBMethodSwizzle.h; sourceTree = "<group>"; };
+		5419E3B77FD639AE523DFD8BA200DB0A /* Pods-DoubleNavigationController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoubleNavigationController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B559E8B45C0AB23EB2E1BF04FAF2A9E /* Pods-DoubleNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6394538F42D9C47B7B3F7C536955B212 /* libPods-DoubleNavigationController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoubleNavigationController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68631C6D94C985A743E2FC593D13A67C /* DoubleNavigationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DoubleNavigationController.xcconfig; sourceTree = "<group>"; };
+		72AB2E67F2F5FEA693D48506E710858E /* UIViewController+DoubleNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+DoubleNavigationController.m"; path = "DoubleNavigationController/Classes/UIViewController+DoubleNavigationController.m"; sourceTree = "<group>"; };
+		897CB7B7851E9E78BAD03F01E882E1E4 /* Pods-DoubleNavigationController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleNavigationController_Example-resources.sh"; sourceTree = "<group>"; };
+		A22A369E4AE94AA83582B3E808BCB2F6 /* DoubleNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DoubleNavigationController-dummy.m"; sourceTree = "<group>"; };
+		C072A161E9D05323B5B9151648CFC9FE /* Pods-DoubleNavigationController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoubleNavigationController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC0C69076BEB342AC45DE125EC2356D5 /* Pods-DoubleNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1130820941A47A9C18482BD72BD08A1 /* Pods-DoubleNavigationController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoubleNavigationController_Tests-dummy.m"; sourceTree = "<group>"; };
+		D7797889E4BEA630C1BE435C33ED0660 /* Pods-DoubleNavigationController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoubleNavigationController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DFEB0B2ECD0642048C17C8D6790DF21D /* libPods-DoubleNavigationController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoubleNavigationController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E796DE9DCD8049351BA4CE876FD9DA4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EB1F0AE10D6BC207B077996858CCBAAA /* Pods-DoubleNavigationController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoubleNavigationController_Example-dummy.m"; sourceTree = "<group>"; };
+		EC64D98B2E5091E1E336F92D7B337BD8 /* DoubleNavigationControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoubleNavigationControllerProtocol.h; path = DoubleNavigationController/Classes/DoubleNavigationControllerProtocol.h; sourceTree = "<group>"; };
+		F7FC134356EABE2886C35F72748E8F6A /* Pods-DoubleNavigationController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoubleNavigationController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F83EA396077ED877124A73471A4420A6 /* Pods-DoubleNavigationController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoubleNavigationController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		186B50B85D2B0BFAD2D86FBF835B475A /* Frameworks */ = {
+		5664382A8F6CC25ECA3A93B428BEE89C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F765BEAC92AB65607122161BB527A7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CDFC493A89CC54B234082C161DF82EF /* Frameworks */ = {
+		9E2A02828F034FEE19D371ACB8C22914 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8741862C57279260301EDED8BE232F98 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CF4F7D13D396CD08338B313DD9AE6D8 /* Frameworks */ = {
+		B9941DDA898C31B1B9ABAE32ED70AB42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AD7F1DC89BD9B94AEE5CE7578A3EE37 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BE3CFFDE66A8ABB1042EFC558096EEC /* Targets Support Files */ = {
+		1B6DDA4CB6F8A866AA0C8AA3BC4B5EF1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8F5C3BA160E310CDA66245B992D5D3E4 /* Pods-DoubleNavigationController_Example */,
-				4151A3F34AD92B35F5D01752738E402A /* Pods-DoubleNavigationController_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		1DFFADC01BEAE8823CC853C2ECB4A676 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				89602D9082A2DD1C0783F65DAE9A5AB6 /* DoubleNavigationController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2E3C19319841A764A80F3E1DCD3A5835 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E59FCDC0A7B242083D75F9CF9E86E2A4 /* DoubleNavigationController.podspec */,
-				478CA7302F1D25DCC69341EB1D222EE5 /* LICENSE */,
-				F279FACB3D4F653613226FF5BAFB89F5 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		4151A3F34AD92B35F5D01752738E402A /* Pods-DoubleNavigationController_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8671B223AC939D1416CEEA858BEB8434 /* Info.plist */,
-				31B29DAF4AF6305143B53E5721831B15 /* Pods-DoubleNavigationController_Tests.modulemap */,
-				DAE305F51C00C85BA921BACC2C37F3AF /* Pods-DoubleNavigationController_Tests-acknowledgements.markdown */,
-				4C5FF411DEC0A53F2BD3DB095CEEA551 /* Pods-DoubleNavigationController_Tests-acknowledgements.plist */,
-				25A3ED37BE8F28542C0990992BF144AC /* Pods-DoubleNavigationController_Tests-dummy.m */,
-				924780AE0E0935EA9E064311EB678197 /* Pods-DoubleNavigationController_Tests-frameworks.sh */,
-				B668382754699CC4A6D5B79D644D1804 /* Pods-DoubleNavigationController_Tests-resources.sh */,
-				16827A9E901594AE8DDD747D3C465757 /* Pods-DoubleNavigationController_Tests-umbrella.h */,
-				554CFCFDAB3E8C4B4A43815F4E11A3E1 /* Pods-DoubleNavigationController_Tests.debug.xcconfig */,
-				E738DD3909447BB7F887A7C87E89AC7C /* Pods-DoubleNavigationController_Tests.release.xcconfig */,
-			);
-			name = "Pods-DoubleNavigationController_Tests";
-			path = "Target Support Files/Pods-DoubleNavigationController_Tests";
-			sourceTree = "<group>";
-		};
-		5DFCB7F645C9D6AB0ED9A2F468C41511 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E341BEBC9237997C8895E461FE917AC4 /* DoubleNavigationController.modulemap */,
-				A93775EC7881FFE9E9CAD139B8E124DD /* DoubleNavigationController.xcconfig */,
-				17E0D13B256224CC0979BCB4AFC2090A /* DoubleNavigationController-dummy.m */,
-				F17C53B7C6D41A48F2F50C34EDC5E53F /* DoubleNavigationController-prefix.pch */,
-				D295A734C0854C99C4B844763C0B4DFE /* DoubleNavigationController-umbrella.h */,
-				EFF03B57B7E205731D09DCE0FC5541C0 /* Info.plist */,
+				68631C6D94C985A743E2FC593D13A67C /* DoubleNavigationController.xcconfig */,
+				A22A369E4AE94AA83582B3E808BCB2F6 /* DoubleNavigationController-dummy.m */,
+				112E9D6EB68A5519EC05B252CF81A3B0 /* DoubleNavigationController-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/DoubleNavigationController";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		1E2A7F4BB8890980A12084856548BCE6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				1DFFADC01BEAE8823CC853C2ECB4A676 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B045D02E0C6C5A35AD78FD0B9B8596FE /* Products */,
-				1BE3CFFDE66A8ABB1042EFC558096EEC /* Targets Support Files */,
+				1417AB53722A5181E7703E431759BBAA /* DoubleNavigationController.podspec */,
+				0203DE9CD522508A32D603A8105E6D30 /* LICENSE */,
+				E796DE9DCD8049351BA4CE876FD9DA4F /* README.md */,
 			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		89602D9082A2DD1C0783F65DAE9A5AB6 /* DoubleNavigationController */ = {
+		1E5417FAA7ADFA7E28201371983ECBED /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				392E2B4D263B71BC3670BC132636567B /* DNBMethodSwizzle.h */,
-				46FED0E0ACA92D19A1E1ADF98A28B79A /* DNBMethodSwizzle.m */,
-				A769767B0D5D5EFB96BA4831AE08B240 /* DoubleNavigationControllerProtocol.h */,
-				1644E0C38AD0DA2BC2C0989E67700EE4 /* UINavigationController+DoubleNavigationController.h */,
-				C18655EB3B6E38EE1F6892BA4E845FCE /* UINavigationController+DoubleNavigationController.m */,
-				44A0A0ACB614EF3BF103B981F16B0321 /* UIViewController+DoubleNavigationController.h */,
-				17B497CA19936EA70A09DDDB923A1023 /* UIViewController+DoubleNavigationController.m */,
-				2E3C19319841A764A80F3E1DCD3A5835 /* Pod */,
-				5DFCB7F645C9D6AB0ED9A2F468C41511 /* Support Files */,
+				C3DEC0D3EE89D7452949A890F683AA4E /* Pods-DoubleNavigationController_Example */,
+				62D2859E0C193C21E0096B3D5ED14FA5 /* Pods-DoubleNavigationController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		47FC768365ED1168A003E64780F9925E /* DoubleNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				4B8C09D5550921327EB6CB9DC22A1252 /* DNBMethodSwizzle.h */,
+				07A32ACD06FB1C27B0A653EEE962B9CF /* DNBMethodSwizzle.m */,
+				EC64D98B2E5091E1E336F92D7B337BD8 /* DoubleNavigationControllerProtocol.h */,
+				1503BE9FFDD34D9E2DD8FA1CCE3E06FB /* UIViewController+DoubleNavigationController.h */,
+				72AB2E67F2F5FEA693D48506E710858E /* UIViewController+DoubleNavigationController.m */,
+				25749A26224E095900160723 /* DBNNavigationDecoration.h */,
+				25749A27224E095900160723 /* DBNNavigationDecoration.m */,
+				1E2A7F4BB8890980A12084856548BCE6 /* Pod */,
+				1B6DDA4CB6F8A866AA0C8AA3BC4B5EF1 /* Support Files */,
 			);
 			name = DoubleNavigationController;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		8F5C3BA160E310CDA66245B992D5D3E4 /* Pods-DoubleNavigationController_Example */ = {
+		62D2859E0C193C21E0096B3D5ED14FA5 /* Pods-DoubleNavigationController_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				02183F6CEEB1E9BE7150469DA7982024 /* Info.plist */,
-				09739AEE56FD2F5679C902E3178B8E9E /* Pods-DoubleNavigationController_Example.modulemap */,
-				02AF1FB200B1387046CAA1C5A651B7E1 /* Pods-DoubleNavigationController_Example-acknowledgements.markdown */,
-				F73BCC18D12296C5FFB629C4AEF3DAB0 /* Pods-DoubleNavigationController_Example-acknowledgements.plist */,
-				1C204574539D3F518983BBCF07956082 /* Pods-DoubleNavigationController_Example-dummy.m */,
-				F08632DB34D9DBA444A5587826C7F2F3 /* Pods-DoubleNavigationController_Example-frameworks.sh */,
-				6758CD3E51E78E0F44C0C84C4FC3C9DE /* Pods-DoubleNavigationController_Example-resources.sh */,
-				E64F1E469C0C08B4CC5E211EBCA41C67 /* Pods-DoubleNavigationController_Example-umbrella.h */,
-				34473F2DFC6C6D23F99C3BB5F2121B4F /* Pods-DoubleNavigationController_Example.debug.xcconfig */,
-				37761B171C480EE282337A809F8430E5 /* Pods-DoubleNavigationController_Example.release.xcconfig */,
+				22A5AE84BE842E515B65AD1B6384D526 /* Pods-DoubleNavigationController_Tests-acknowledgements.markdown */,
+				5419E3B77FD639AE523DFD8BA200DB0A /* Pods-DoubleNavigationController_Tests-acknowledgements.plist */,
+				D1130820941A47A9C18482BD72BD08A1 /* Pods-DoubleNavigationController_Tests-dummy.m */,
+				1B6A9985F4B14CAAA07ADC8843BB995E /* Pods-DoubleNavigationController_Tests-frameworks.sh */,
+				115D6F29BCC4157BDE899F192705B803 /* Pods-DoubleNavigationController_Tests-resources.sh */,
+				CC0C69076BEB342AC45DE125EC2356D5 /* Pods-DoubleNavigationController_Tests.debug.xcconfig */,
+				39DA895B2774D5CD61A88C9F83FAFBF3 /* Pods-DoubleNavigationController_Tests.release.xcconfig */,
+			);
+			name = "Pods-DoubleNavigationController_Tests";
+			path = "Target Support Files/Pods-DoubleNavigationController_Tests";
+			sourceTree = "<group>";
+		};
+		A995439DD2767807748105FE37014B53 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47FC768365ED1168A003E64780F9925E /* DoubleNavigationController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C3DEC0D3EE89D7452949A890F683AA4E /* Pods-DoubleNavigationController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C072A161E9D05323B5B9151648CFC9FE /* Pods-DoubleNavigationController_Example-acknowledgements.markdown */,
+				F7FC134356EABE2886C35F72748E8F6A /* Pods-DoubleNavigationController_Example-acknowledgements.plist */,
+				EB1F0AE10D6BC207B077996858CCBAAA /* Pods-DoubleNavigationController_Example-dummy.m */,
+				D7797889E4BEA630C1BE435C33ED0660 /* Pods-DoubleNavigationController_Example-frameworks.sh */,
+				897CB7B7851E9E78BAD03F01E882E1E4 /* Pods-DoubleNavigationController_Example-resources.sh */,
+				F83EA396077ED877124A73471A4420A6 /* Pods-DoubleNavigationController_Example.debug.xcconfig */,
+				5B559E8B45C0AB23EB2E1BF04FAF2A9E /* Pods-DoubleNavigationController_Example.release.xcconfig */,
 			);
 			name = "Pods-DoubleNavigationController_Example";
 			path = "Target Support Files/Pods-DoubleNavigationController_Example";
 			sourceTree = "<group>";
 		};
-		B045D02E0C6C5A35AD78FD0B9B8596FE /* Products */ = {
+		C49EF18BE8518CD78DA2BF5066F0C713 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE1361E29D825DD69A73B4E35E566CFB /* DoubleNavigationController.framework */,
-				882C644834F4993CA6F15149DC645EDF /* Pods_DoubleNavigationController_Example.framework */,
-				E23C22CB3B18B64AFF6367F974358505 /* Pods_DoubleNavigationController_Tests.framework */,
+				3C956FC2ABA859679016F3D926649960 /* libDoubleNavigationController.a */,
+				DFEB0B2ECD0642048C17C8D6790DF21D /* libPods-DoubleNavigationController_Example.a */,
+				6394538F42D9C47B7B3F7C536955B212 /* libPods-DoubleNavigationController_Tests.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				A995439DD2767807748105FE37014B53 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				C49EF18BE8518CD78DA2BF5066F0C713 /* Products */,
+				1E5417FAA7ADFA7E28201371983ECBED /* Targets Support Files */,
 			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1BD7CBF65A32481AA9D024999889982E /* Headers */ = {
+		16372524F6CEC7D3E6BB6FE5114EC650 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6E2AD1585D5E5E2B13814D3C1A45BC2 /* Pods-DoubleNavigationController_Tests-umbrella.h in Headers */,
+				1057481B268D3FD3AE6C5F83A66BD5E6 /* DNBMethodSwizzle.h in Headers */,
+				35B1D14D100A5A5DE530EB23D7FAF2B8 /* DoubleNavigationControllerProtocol.h in Headers */,
+				AD24AA3BF76409FF8BDD6D19B1115B8D /* UIViewController+DoubleNavigationController.h in Headers */,
+				25749A28224E095900160723 /* DBNNavigationDecoration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53160AF97FF2915EFE1B40F5725DFABC /* Headers */ = {
+		9E4D276D7E4B8F6C73A687EFD8E9DF89 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AEFA55975E3031875E02A571009C790 /* Pods-DoubleNavigationController_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79101CEE92843271EE4316593EDD0B6A /* Headers */ = {
+		EA10EBAC27AC9F5798239E740BA19341 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4832658B2041952B242B0015A496ABEC /* DNBMethodSwizzle.h in Headers */,
-				7810DEFBA5BA21E184C5057392F64F10 /* DoubleNavigationController-umbrella.h in Headers */,
-				F7CC3435837A702DA5AA173DDAD24463 /* DoubleNavigationControllerProtocol.h in Headers */,
-				C24EFDE8558598211E30492B9B22680A /* UINavigationController+DoubleNavigationController.h in Headers */,
-				9B1988C71A9D58A37418E001C8801861 /* UIViewController+DoubleNavigationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		104360E3BA4BD9B75660C9D7E2882937 /* Pods-DoubleNavigationController_Tests */ = {
+		41A8436FC7C2796989F8CF7D7CEAEEDF /* Pods-DoubleNavigationController_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 829235531113FEF25748DE5B7323CB0C /* Build configuration list for PBXNativeTarget "Pods-DoubleNavigationController_Tests" */;
+			buildConfigurationList = 20B87BB07D9AA3AC829A44A87D862974 /* Build configuration list for PBXNativeTarget "Pods-DoubleNavigationController_Tests" */;
 			buildPhases = (
-				C5D5DACB926504B6E7B45886F87042B1 /* Sources */,
-				186B50B85D2B0BFAD2D86FBF835B475A /* Frameworks */,
-				1BD7CBF65A32481AA9D024999889982E /* Headers */,
+				EA10EBAC27AC9F5798239E740BA19341 /* Headers */,
+				840923C87D11604DA577948FD4CD9E5A /* Sources */,
+				B9941DDA898C31B1B9ABAE32ED70AB42 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0AD53D9BA719172D4DEA3EA1DC61443A /* PBXTargetDependency */,
+				B4D696F020E17884D615C62646301C0B /* PBXTargetDependency */,
 			);
 			name = "Pods-DoubleNavigationController_Tests";
 			productName = "Pods-DoubleNavigationController_Tests";
-			productReference = E23C22CB3B18B64AFF6367F974358505 /* Pods_DoubleNavigationController_Tests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 6394538F42D9C47B7B3F7C536955B212 /* libPods-DoubleNavigationController_Tests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		73A82DD44A255D60844FCD91C137AB57 /* Pods-DoubleNavigationController_Example */ = {
+		46AB6BBC4D8B06593AD2FC93370981A3 /* DoubleNavigationController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D818C363E09DB56C084D0D733590335 /* Build configuration list for PBXNativeTarget "Pods-DoubleNavigationController_Example" */;
+			buildConfigurationList = 70CE3DBC16DA3D549392BCFCE5A4596E /* Build configuration list for PBXNativeTarget "DoubleNavigationController" */;
 			buildPhases = (
-				EE1683A6E46470BC45F5ED69028BCAF9 /* Sources */,
-				6CF4F7D13D396CD08338B313DD9AE6D8 /* Frameworks */,
-				53160AF97FF2915EFE1B40F5725DFABC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F5FF9F3FD2C86AC709E56F2E63C7C583 /* PBXTargetDependency */,
-			);
-			name = "Pods-DoubleNavigationController_Example";
-			productName = "Pods-DoubleNavigationController_Example";
-			productReference = 882C644834F4993CA6F15149DC645EDF /* Pods_DoubleNavigationController_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AF9F4067C2733107E2F7C3FBF48463B8 /* DoubleNavigationController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEA294AC7CFA25F25BFAE7891284D161 /* Build configuration list for PBXNativeTarget "DoubleNavigationController" */;
-			buildPhases = (
-				AC57D2AA5A72F09721CB8D1CAC79FE60 /* Sources */,
-				4CDFC493A89CC54B234082C161DF82EF /* Frameworks */,
-				79101CEE92843271EE4316593EDD0B6A /* Headers */,
+				16372524F6CEC7D3E6BB6FE5114EC650 /* Headers */,
+				522F65E45F49DB9B8DCA54ADA9D0734A /* Sources */,
+				5664382A8F6CC25ECA3A93B428BEE89C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,245 +271,192 @@
 			);
 			name = DoubleNavigationController;
 			productName = DoubleNavigationController;
-			productReference = FE1361E29D825DD69A73B4E35E566CFB /* DoubleNavigationController.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 3C956FC2ABA859679016F3D926649960 /* libDoubleNavigationController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6671104E631435A0999EC4B762BECD44 /* Pods-DoubleNavigationController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E879EB3EFF2C7EFA356CDC21B6DFAFEC /* Build configuration list for PBXNativeTarget "Pods-DoubleNavigationController_Example" */;
+			buildPhases = (
+				9E4D276D7E4B8F6C73A687EFD8E9DF89 /* Headers */,
+				A8478F73AD29934FDDE8EA83CB36FCE1 /* Sources */,
+				9E2A02828F034FEE19D371ACB8C22914 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00FA47C9019E979800E298FA58F6DF98 /* PBXTargetDependency */,
+			);
+			name = "Pods-DoubleNavigationController_Example";
+			productName = "Pods-DoubleNavigationController_Example";
+			productReference = DFEB0B2ECD0642048C17C8D6790DF21D /* libPods-DoubleNavigationController_Example.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B045D02E0C6C5A35AD78FD0B9B8596FE /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C49EF18BE8518CD78DA2BF5066F0C713 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF9F4067C2733107E2F7C3FBF48463B8 /* DoubleNavigationController */,
-				73A82DD44A255D60844FCD91C137AB57 /* Pods-DoubleNavigationController_Example */,
-				104360E3BA4BD9B75660C9D7E2882937 /* Pods-DoubleNavigationController_Tests */,
+				46AB6BBC4D8B06593AD2FC93370981A3 /* DoubleNavigationController */,
+				6671104E631435A0999EC4B762BECD44 /* Pods-DoubleNavigationController_Example */,
+				41A8436FC7C2796989F8CF7D7CEAEEDF /* Pods-DoubleNavigationController_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AC57D2AA5A72F09721CB8D1CAC79FE60 /* Sources */ = {
+		522F65E45F49DB9B8DCA54ADA9D0734A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				186EA91D288A73F39C1534FBB031A35B /* DNBMethodSwizzle.m in Sources */,
-				992D0BBDB69AE327D0B182B26480A992 /* DoubleNavigationController-dummy.m in Sources */,
-				2F9B27522CC28C2EC42A76A411629F7C /* UINavigationController+DoubleNavigationController.m in Sources */,
-				F2FAB2D971AFA5DEA5C6A4C1C4233A98 /* UIViewController+DoubleNavigationController.m in Sources */,
+				25749A29224E095900160723 /* DBNNavigationDecoration.m in Sources */,
+				55CF3254887DC4DC9A26E20DF0DB8D31 /* DNBMethodSwizzle.m in Sources */,
+				DE8A17F12660FAA72C8DA7D1BE58473F /* DoubleNavigationController-dummy.m in Sources */,
+				C3DB9F80DD42126E775C8CB7C5C44773 /* UIViewController+DoubleNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5D5DACB926504B6E7B45886F87042B1 /* Sources */ = {
+		840923C87D11604DA577948FD4CD9E5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B86B18B55478DC2F2B49C1A9D3B0A33B /* Pods-DoubleNavigationController_Tests-dummy.m in Sources */,
+				33DB2A9981D89307C4C5B259A5B28689 /* Pods-DoubleNavigationController_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE1683A6E46470BC45F5ED69028BCAF9 /* Sources */ = {
+		A8478F73AD29934FDDE8EA83CB36FCE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1880D2A15946C7E88C0580D5FDBE19E9 /* Pods-DoubleNavigationController_Example-dummy.m in Sources */,
+				AA615D038F5D3DC09AC53509E1ADD8D5 /* Pods-DoubleNavigationController_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0AD53D9BA719172D4DEA3EA1DC61443A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-DoubleNavigationController_Example";
-			target = 73A82DD44A255D60844FCD91C137AB57 /* Pods-DoubleNavigationController_Example */;
-			targetProxy = 863869B695378B8EEA6353CAC738FD6D /* PBXContainerItemProxy */;
-		};
-		F5FF9F3FD2C86AC709E56F2E63C7C583 /* PBXTargetDependency */ = {
+		00FA47C9019E979800E298FA58F6DF98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DoubleNavigationController;
-			target = AF9F4067C2733107E2F7C3FBF48463B8 /* DoubleNavigationController */;
-			targetProxy = 48EEF4A3801087D5186DC13B5CD255F7 /* PBXContainerItemProxy */;
+			target = 46AB6BBC4D8B06593AD2FC93370981A3 /* DoubleNavigationController */;
+			targetProxy = 1F76216AE9032B388D6F81F9F7045366 /* PBXContainerItemProxy */;
+		};
+		B4D696F020E17884D615C62646301C0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DoubleNavigationController_Example";
+			target = 6671104E631435A0999EC4B762BECD44 /* Pods-DoubleNavigationController_Example */;
+			targetProxy = 5E5497F882B8C7AC772E1CFA9129DD97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		19A5C83DD4CAC4BBA915CBFAB1D6A230 /* Debug */ = {
+		0235F8FD52B73435E3AF011192AEC0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A93775EC7881FFE9E9CAD139B8E124DD /* DoubleNavigationController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DoubleNavigationController/DoubleNavigationController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DoubleNavigationController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DoubleNavigationController/DoubleNavigationController.modulemap";
-				PRODUCT_MODULE_NAME = DoubleNavigationController;
-				PRODUCT_NAME = DoubleNavigationController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2CC75A87C8FBD90A8745FC72EC3B8283 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E738DD3909447BB7F887A7C87E89AC7C /* Pods-DoubleNavigationController_Tests.release.xcconfig */;
+			baseConfigurationReference = 5B559E8B45C0AB23EB2E1BF04FAF2A9E /* Pods-DoubleNavigationController_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DoubleNavigationController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DoubleNavigationController_Tests/Pods-DoubleNavigationController_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		3D305B362D06B0A82343515D87BD0684 /* Debug */ = {
+		0391E87407E653AA563E09932D391A2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34473F2DFC6C6D23F99C3BB5F2121B4F /* Pods-DoubleNavigationController_Example.debug.xcconfig */;
+			baseConfigurationReference = F83EA396077ED877124A73471A4420A6 /* Pods-DoubleNavigationController_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DoubleNavigationController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DoubleNavigationController_Example/Pods-DoubleNavigationController_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		51AF0CAA26715B53A254AFF71D49D2EF /* Release */ = {
+		58F3BF3CC5CA0CC27477E926AEA96F24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A93775EC7881FFE9E9CAD139B8E124DD /* DoubleNavigationController.xcconfig */;
+			baseConfigurationReference = 68631C6D94C985A743E2FC593D13A67C /* DoubleNavigationController.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/DoubleNavigationController/DoubleNavigationController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DoubleNavigationController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DoubleNavigationController/DoubleNavigationController.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = DoubleNavigationController;
 				PRODUCT_NAME = DoubleNavigationController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		83F75424A8A84DB98989CFB4843EE957 /* Debug */ = {
+		86D73DA4A1A6647428B8B6EB765F5362 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 554CFCFDAB3E8C4B4A43815F4E11A3E1 /* Pods-DoubleNavigationController_Tests.debug.xcconfig */;
+			baseConfigurationReference = 39DA895B2774D5CD61A88C9F83FAFBF3 /* Pods-DoubleNavigationController_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DoubleNavigationController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DoubleNavigationController_Tests/Pods-DoubleNavigationController_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+		A2D8ABB6E4BC099AA916C6E74DA83921 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -621,50 +510,40 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		AD8F69CA04F99FE96ADC4DED809B2186 /* Release */ = {
+		A79676A12019B557F1842234509C3648 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37761B171C480EE282337A809F8430E5 /* Pods-DoubleNavigationController_Example.release.xcconfig */;
+			baseConfigurationReference = CC0C69076BEB342AC45DE125EC2356D5 /* Pods-DoubleNavigationController_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DoubleNavigationController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DoubleNavigationController_Example/Pods-DoubleNavigationController_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+		BF17B80227EE551582927B0FBE01EF40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -716,52 +595,78 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
+		D73ABBCCB7B01CF2709AEB42D8D443E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68631C6D94C985A743E2FC593D13A67C /* DoubleNavigationController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DoubleNavigationController/DoubleNavigationController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DoubleNavigationController;
+				PRODUCT_NAME = DoubleNavigationController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		20B87BB07D9AA3AC829A44A87D862974 /* Build configuration list for PBXNativeTarget "Pods-DoubleNavigationController_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
-				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+				A79676A12019B557F1842234509C3648 /* Debug */,
+				86D73DA4A1A6647428B8B6EB765F5362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D818C363E09DB56C084D0D733590335 /* Build configuration list for PBXNativeTarget "Pods-DoubleNavigationController_Example" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D305B362D06B0A82343515D87BD0684 /* Debug */,
-				AD8F69CA04F99FE96ADC4DED809B2186 /* Release */,
+				A2D8ABB6E4BC099AA916C6E74DA83921 /* Debug */,
+				BF17B80227EE551582927B0FBE01EF40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		829235531113FEF25748DE5B7323CB0C /* Build configuration list for PBXNativeTarget "Pods-DoubleNavigationController_Tests" */ = {
+		70CE3DBC16DA3D549392BCFCE5A4596E /* Build configuration list for PBXNativeTarget "DoubleNavigationController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83F75424A8A84DB98989CFB4843EE957 /* Debug */,
-				2CC75A87C8FBD90A8745FC72EC3B8283 /* Release */,
+				D73ABBCCB7B01CF2709AEB42D8D443E5 /* Debug */,
+				58F3BF3CC5CA0CC27477E926AEA96F24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA294AC7CFA25F25BFAE7891284D161 /* Build configuration list for PBXNativeTarget "DoubleNavigationController" */ = {
+		E879EB3EFF2C7EFA356CDC21B6DFAFEC /* Build configuration list for PBXNativeTarget "Pods-DoubleNavigationController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19A5C83DD4CAC4BBA915CBFAB1D6A230 /* Debug */,
-				51AF0CAA26715B53A254AFF71D49D2EF /* Release */,
+				0391E87407E653AA563E09932D391A2C /* Debug */,
+				0235F8FD52B73435E3AF011192AEC0C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

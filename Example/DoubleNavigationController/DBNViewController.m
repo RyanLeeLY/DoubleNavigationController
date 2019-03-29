@@ -28,9 +28,9 @@
     [testButton addTarget:self action:@selector(eventFromButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)dbn_configNavigationController:(UINavigationController *)navigationController {
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
-    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
+- (void)dbn_configNavigationController:(UINavigationController *)navigationController navigationItem:(UINavigationItem *)navigationItem {
+    [navigationController setNavigationBarHidden:NO animated:NO];
+    navigationController.navigationBar.barTintColor = [UIColor grayColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

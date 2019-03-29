@@ -8,5 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol DoubleNavigationControllerProtocol <NSObject>
+@optional
 - (void)dbn_configNavigationController:(UINavigationController *)navigationController;
+- (void)dbn_configNavigationItem:(UINavigationItem *)navigationItem;
 @end
