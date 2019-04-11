@@ -50,7 +50,6 @@
         if ([self respondsToSelector:@selector(dbn_configNavigationItem:)]) {
             [self performSelector:@selector(dbn_configNavigationItem:) withObject:self.navigationItem];
         }
-        self.dbn_viewAppeared = YES;
     } else {
         [self.dbn_navigationDecoration doDecorate];
         [self setDbn_secondNavigationBarHidden:NO];
@@ -68,11 +67,15 @@
     UINavigationBar *bar = (UINavigationBar *)self.dbn_fakeNavigationBar;
     if (bar) {
         [self navigationBar:self.navigationController.navigationBar imitate:bar];
-    } else {
-        [self.dbn_navigationDecoration doDecorate];
     }
-    [self setDbn_secondNavigationBarHidden:YES];
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    if (self.dbn_viewAppeared) {
+        [self setDbn_secondNavigationBarHidden:YES];
+        [self.navigationController setNavigationBarHidden:NO animated:NO];
+        [self.dbn_navigationDecoration doDecorate];
+    } else {
+        self.dbn_viewAppeared = YES;
+    }
 }
 
 - (void)dbn_viewWillDisappear:(BOOL)animated {
@@ -97,10 +100,13 @@
         || self.dbn_needsUpdateNavigation) {
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.navigationController.navigationBar];
         UIView *fakeNavigationBar = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        if (self.dbn_fakeNavigationBar.superview) {
+            [self.dbn_fakeNavigationBar removeFromSuperview];
+        }
         self.dbn_fakeNavigationBar = fakeNavigationBar;
         self.dbn_needsUpdateNavigation = NO;
-        [self.view addSubview:self.dbn_fakeNavigationBar];
-        [self navigationBar:(UINavigationBar *)self.dbn_fakeNavigationBar imitate:self.navigationController.navigationBar]; // UIAppearance will be setted after the navigationBar has been added to super view
+        [self.view addSubview:fakeNavigationBar];
+        [self navigationBar:(UINavigationBar *)fakeNavigationBar imitate:self.navigationController.navigationBar]; // UIAppearance will be setted after the navigationBar has been added to super view
     }
     
     [self.view bringSubviewToFront:self.dbn_fakeNavigationBar];

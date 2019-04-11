@@ -43,15 +43,15 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-//    [self dbn_performBatchUpdates:^(UINavigationController * _Nullable navigationController) {
-//        if (navigationController) {
-//            navigationController.navigationBar.tintColor = [UIColor purpleColor];
-//        }
-//    }];
+    [self dbn_performBatchUpdates:^(UINavigationController * _Nullable navigationController) {
+        if (navigationController) {
+            navigationController.navigationBar.tintColor = [UIColor purpleColor];
+        }
+    }];
 }
 
 - (void)dbn_configNavigationController:(UINavigationController *)navigationController {
-    [navigationController setNavigationBarHidden:NO animated:NO];
+    [navigationController setNavigationBarHidden:YES animated:NO];
     navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     navigationController.navigationBar.tintColor = [UIColor purpleColor];
     navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor redColor]};
