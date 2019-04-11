@@ -85,9 +85,9 @@
         }
     } else {
         [self setDbn_secondNavigationBarHidden:YES];
-        self.navigationController.dbn_realNavigationBarHidden = self.navigationController.isNavigationBarHidden;
         [self.navigationController setNavigationBarHidden:NO animated:NO];
         [self.dbn_navigationDecoration doDecorate];
+        self.navigationController.dbn_realNavigationBarHidden = self.navigationController.isNavigationBarHidden;
     }
 }
 
