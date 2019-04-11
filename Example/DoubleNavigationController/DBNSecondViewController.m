@@ -8,7 +8,7 @@
 
 #import "DBNSecondViewController.h"
 #import <DoubleNavigationController/UIViewController+DoubleNavigationController.h>
-#import "DBNThirdViewController.h"
+#import "DBNFourthViewController.h"
 
 @interface DBNSecondViewController () <DoubleNavigationControllerProtocol>
 
@@ -21,20 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 200, 100, 40)];
     [self.view addSubview:testButton];
-    [testButton setTitle:@"next" forState:UIControlStateNormal];
+    [testButton setTitle:@"Next" forState:UIControlStateNormal];
+    [testButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [testButton addTarget:self action:@selector(eventFromButton:) forControlEvents:UIControlEventTouchUpInside];
-    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self dbn_performBatchUpdates:^(UINavigationController * _Nullable navigationController) {
-//            if (navigationController) {
-//                navigationController.navigationBar.barTintColor = [UIColor blueColor];
-//            }
-//        }];
-//    });
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -43,29 +36,32 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self dbn_performBatchUpdates:^(UINavigationController * _Nullable navigationController) {
-        if (navigationController) {
-            navigationController.navigationBar.tintColor = [UIColor purpleColor];
-        }
-    }];
+//    [self dbn_performBatchUpdates:^(UINavigationController * _Nullable navigationController) {
+//        if (navigationController) {
+//            navigationController.navigationBar.tintColor = [UIColor purpleColor];
+//        }
+//    }];
 }
 
 - (void)dbn_configNavigationController:(UINavigationController *)navigationController {
     [navigationController setNavigationBarHidden:YES animated:NO];
-    navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    navigationController.navigationBar.tintColor = [UIColor purpleColor];
+    navigationController.navigationBar.barTintColor = [UIColor colorWithRed:1.f/255 green:162.f/255 blue:1 alpha:1];
+    navigationController.navigationBar.tintColor = [UIColor whiteColor];
     navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor redColor]};
 }
 
 - (void)dbn_configNavigationItem:(UINavigationItem *)navigationItem {
-    UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(eventFromButton:)];
+    UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(eventFromButton:)];
     navigationItem.rightBarButtonItem = btnItem;
-    navigationItem.title = @"Hello";
+    navigationItem.title = @"Blue";
 }
 
 - (void)eventFromButton:(UIButton *)sender {
-    DBNThirdViewController *controller = [[DBNThirdViewController alloc] init];
-    [self.navigationController pushViewController:controller animated:YES];
+    if ([sender isKindOfClass:[UIBarButtonItem class]]) {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    } else if ([sender isKindOfClass:[UIButton class]]) {
+        [self.navigationController pushViewController:[[DBNFourthViewController alloc] init] animated:YES];
+    }
 }
 
 @end

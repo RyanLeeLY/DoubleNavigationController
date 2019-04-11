@@ -18,23 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor brownColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 200, 100, 40)];
     [self.view addSubview:testButton];
-    [testButton setTitle:@"next" forState:UIControlStateNormal];
+    [testButton setTitle:@"Next" forState:UIControlStateNormal];
+    [testButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [testButton addTarget:self action:@selector(eventFromButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)dbn_configNavigationController:(UINavigationController *)navigationController {
     [navigationController setNavigationBarHidden:NO animated:NO];
-    navigationController.navigationBar.barTintColor = [UIColor cyanColor];
+    navigationController.navigationBar.barTintColor = [UIColor colorWithRed:248.f/255 green:186.f/255 blue:0 alpha:1];
+    navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)dbn_configNavigationItem:(UINavigationItem *)navigationItem {
     UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(eventFromButton:)];
     navigationItem.rightBarButtonItem = btnItem;
-    navigationItem.title = @"Bye";
+    navigationItem.title = @"Yellow";
 }
 
 - (void)eventFromButton:(UIButton *)sender {

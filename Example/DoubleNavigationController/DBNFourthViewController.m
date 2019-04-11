@@ -17,21 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor lightGrayColor];
-    
-    UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 200, 100, 40)];
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 200, 180, 40)];
     [self.view addSubview:testButton];
-    [testButton setTitle:@"back" forState:UIControlStateNormal];
+    [testButton setTitle:@"Back To Root" forState:UIControlStateNormal];
+    [testButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [testButton addTarget:self action:@selector(eventFromButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-
 }
 
 - (void)eventFromButton:(UIButton *)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 @end

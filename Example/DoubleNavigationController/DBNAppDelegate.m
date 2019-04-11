@@ -18,11 +18,12 @@
     UIWindow *keyWindow = [[UIWindow alloc] init];
     self.window = keyWindow;
     self.window.rootViewController = rootController;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor brownColor]};
-    [UINavigationBar appearance].barTintColor = [UIColor whiteColor];
-    [UINavigationBar appearance].tintColor = [UIColor greenColor];
+//    [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor brownColor]};
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:229.f/255 green:231.f/255 blue:230.f/255 alpha:1];
+//    [UINavigationBar appearance].tintColor = [UIColor greenColor];
     return YES;
 }
 
