@@ -19,6 +19,9 @@
     self.window = keyWindow;
     self.window.rootViewController = rootController;
     [self.window makeKeyAndVisible];
+    
+    [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor brownColor]};
+    [UINavigationBar appearance].barTintColor = [UIColor whiteColor];
     return YES;
 }
 

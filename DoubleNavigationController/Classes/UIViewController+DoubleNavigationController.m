@@ -25,7 +25,6 @@
     static dispatch_once_t dbnOnceToken;
     dispatch_once(&dbnOnceToken, ^{
         Class clz = [self class];
-        DBNSwizzleMethod(clz, @selector(viewDidLoad), clz, @selector(dbn_viewDidLoad));
         DBNSwizzleMethod(clz, @selector(viewWillAppear:), clz, @selector(dbn_viewWillAppear:));
         DBNSwizzleMethod(clz, @selector(viewDidAppear:), clz, @selector(dbn_viewDidAppear:));
         DBNSwizzleMethod(clz, @selector(viewWillDisappear:), clz, @selector(dbn_viewWillDisappear:));
@@ -33,13 +32,8 @@
 }
 
 #pragma mark - Method Swizzling
-- (void)dbn_viewDidLoad {
-    [self dbn_viewDidLoad];
-}
-
 - (void)dbn_viewWillAppear:(BOOL)animated {
     [self dbn_viewWillAppear:animated];
-    
     if (!self.navigationController) {
         return;
     }
@@ -57,10 +51,11 @@
             [self performSelector:@selector(dbn_configNavigationItem:) withObject:self.navigationItem];
         }
         self.dbn_viewAppeared = YES;
+    } else {
+        [self.dbn_navigationDecoration doDecorate];
+        [self setDbn_secondNavigationBarHidden:NO];
+        [self.navigationController setNavigationBarHidden:YES animated:NO];
     }
-    
-    [self setDbn_secondNavigationBarHidden:NO];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)dbn_viewDidAppear:(BOOL)animated {
@@ -70,10 +65,14 @@
         return;
     }
     
+    UINavigationBar *bar = (UINavigationBar *)self.dbn_fakeNavigationBar;
+    if (bar) {
+        [self navigationBar:self.navigationController.navigationBar imitate:bar];
+    } else {
+        [self.dbn_navigationDecoration doDecorate];
+    }
     [self setDbn_secondNavigationBarHidden:YES];
-
     [self.navigationController setNavigationBarHidden:NO animated:NO];
-    [self.dbn_navigationDecoration doDecorate];
 }
 
 - (void)dbn_viewWillDisappear:(BOOL)animated {
@@ -97,15 +96,32 @@
     if (!objc_getAssociatedObject(self, @selector(dbn_fakeNavigationBar))
         || self.dbn_needsUpdateNavigation) {
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.navigationController.navigationBar];
-        UIView *dbn_fakeNavigationBar = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        objc_setAssociatedObject(self, @selector(dbn_fakeNavigationBar), dbn_fakeNavigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        UIView *fakeNavigationBar = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        self.dbn_fakeNavigationBar = fakeNavigationBar;
         self.dbn_needsUpdateNavigation = NO;
         [self.view addSubview:self.dbn_fakeNavigationBar];
     }
     
     [self.view bringSubviewToFront:self.dbn_fakeNavigationBar];
+    [self navigationBar:(UINavigationBar *)self.dbn_fakeNavigationBar imitate:self.navigationController.navigationBar]; // UIAppearance will be setted after the navigationBar has been added to super view
     self.dbn_fakeNavigationBar.hidden = hidden;
+}
 
+- (void)navigationBar:(UINavigationBar *)navigationBar imitate:(UINavigationBar *)navigationBarImitated {
+    navigationBar.barStyle = navigationBarImitated.barStyle;
+    navigationBar.translucent = navigationBarImitated.isTranslucent;
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 110000
+    if (@available(iOS 11.0, *)) {
+        navigationBar.prefersLargeTitles = navigationBarImitated.prefersLargeTitles;
+        navigationBar.largeTitleTextAttributes = navigationBarImitated.largeTitleTextAttributes;
+    }
+#endif
+    navigationBar.tintColor = navigationBarImitated.tintColor;
+    navigationBar.barTintColor = navigationBarImitated.barTintColor;
+    navigationBar.shadowImage = navigationBarImitated.shadowImage;
+    navigationBar.titleTextAttributes = navigationBarImitated.titleTextAttributes;
+    navigationBar.backIndicatorImage = navigationBarImitated.backIndicatorImage;
+    navigationBar.backIndicatorTransitionMaskImage = navigationBarImitated.backIndicatorTransitionMaskImage;
 }
 
 #pragma mark - setter & getter

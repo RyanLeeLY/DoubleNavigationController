@@ -26,15 +26,24 @@
     [self.view addSubview:testButton];
     [testButton setTitle:@"next" forState:UIControlStateNormal];
     [testButton addTarget:self action:@selector(eventFromButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
+
 }
 
-- (void)dbn_configNavigationController:(UINavigationController *)navigationController navigationItem:(UINavigationItem *)navigationItem {
+- (void)dbn_configNavigationController:(UINavigationController *)navigationController {
     [navigationController setNavigationBarHidden:NO animated:NO];
     navigationController.navigationBar.barTintColor = [UIColor grayColor];
 }
 
+- (void)dbn_configNavigationItem:(UINavigationItem *)navigationItem {
+    UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(eventFromButton:)];
+    navigationItem.rightBarButtonItem = btnItem;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
 }
 
 - (void)eventFromButton:(UIButton *)sender {
