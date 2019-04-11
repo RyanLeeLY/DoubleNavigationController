@@ -40,7 +40,7 @@
 }
 
 - (void)dbn_configNavigationController:(UINavigationController *)navigationController {
-//    [navigationController setNavigationBarHidden:NO animated:NO];
+    [navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)dbn_configNavigationItem:(UINavigationItem *)navigationItem {

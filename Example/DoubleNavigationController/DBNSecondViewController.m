@@ -44,7 +44,7 @@
 }
 
 - (void)dbn_configNavigationController:(UINavigationController *)navigationController {
-    [navigationController setNavigationBarHidden:YES animated:NO];
+    [navigationController setNavigationBarHidden:NO animated:NO];
     navigationController.navigationBar.barTintColor = [UIColor colorWithRed:1.f/255 green:162.f/255 blue:1 alpha:1];
     navigationController.navigationBar.tintColor = [UIColor whiteColor];
     navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor redColor]};
