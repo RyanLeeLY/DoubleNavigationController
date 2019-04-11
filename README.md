@@ -9,7 +9,7 @@
 As we all known, `UINavigationController` is a container view controller that manages one or more child view controllers in a navigation interface. Sometimes, we just wanna change the appearance in current view controller instead of affecting the whole app. DoubleNavigationController is a library that can solve the problem above.
 
 ## Architecture
-We can think of `UINavigationController` as a tree, and each node is a ViewController that managed by it. We can change the appearance of NavigationBar in current node without affecting its parent node's. However, its child nodes' NavigationBar will be affected.
+We can think of `UINavigationController` as a tree, and each node is a ViewController that managed by it. By using **DoubleNavigationController**, we can change the appearance of NavigationBar in current node without affecting its parent node's. However, its child nodes' NavigationBar will be affected. The relationship can be described as the picture below.
 
 ![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/architecture.jpeg)
 
