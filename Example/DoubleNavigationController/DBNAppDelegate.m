@@ -22,6 +22,7 @@
     
     [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor brownColor]};
     [UINavigationBar appearance].barTintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].tintColor = [UIColor greenColor];
     return YES;
 }
 

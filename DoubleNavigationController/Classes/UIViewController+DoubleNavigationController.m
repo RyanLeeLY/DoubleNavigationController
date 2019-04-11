@@ -100,10 +100,10 @@
         self.dbn_fakeNavigationBar = fakeNavigationBar;
         self.dbn_needsUpdateNavigation = NO;
         [self.view addSubview:self.dbn_fakeNavigationBar];
+        [self navigationBar:(UINavigationBar *)self.dbn_fakeNavigationBar imitate:self.navigationController.navigationBar]; // UIAppearance will be setted after the navigationBar has been added to super view
     }
     
     [self.view bringSubviewToFront:self.dbn_fakeNavigationBar];
-    [self navigationBar:(UINavigationBar *)self.dbn_fakeNavigationBar imitate:self.navigationController.navigationBar]; // UIAppearance will be setted after the navigationBar has been added to super view
     self.dbn_fakeNavigationBar.hidden = hidden;
 }
 
