@@ -76,7 +76,7 @@
 
 细节3：由于`UIAppearance`的原理是在UIView被添加到视图树后才会去改变对象的外观，因此在使用FakeNavigationBar之前需要再一次和当前的navigationBar进行一次UIAppearance属性的复制。参考：[iOS UIAppearance 探秘 — HyanCat's](https://hyancat.com/posts/2016/04/13/UIAppearance/)
 
-![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/Resource/hf5r9.jpeg)
+![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/Resource/hf5r9.png)
 
 ## 例子
 
