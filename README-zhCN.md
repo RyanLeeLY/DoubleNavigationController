@@ -20,7 +20,7 @@
 
 **DoubleNavigationController**解决的便是这个问题，让开发者自由地修改NavigationBar样式，并且不用担心在退回到栈下ViewController后NavigationBar的样式也被修改。简单来说就是，我们修改NavigationBar不再会影响栈内现有的页面样式，而只影响之后Push的新页面。
 
-![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/architecture.jpeg)
+![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/Resource/architecture.jpeg)
 
 * 为什么不设计成既不影响栈内现有的页面样式，也不影响新页面？
 
@@ -58,7 +58,7 @@
 
 **跟B页面一样？**
 
-保持和B页面一样，粗略一想，这和“跟A页面一样？”方案似乎是差不多的，但实际上这两种方案有着本质区别。“跟B页面一样”换一个更好的说法应该是“跟最近一次用户对导航栏修改之后的样式一样”，也就是说C页面只需要关注导航栏本身，而不需要关注谁修改了导航栏，这样一来就满足来上述的设计思想**“谁用谁修改”**。
+保持和B页面一样，粗略一想，这和“跟A页面一样？”方案似乎是差不多的，但实际上这两种方案有着本质区别。“跟B页面一样”换一个更好的说法应该是“跟最近一次用户对导航栏修改之后的样式一样”，也就是说C页面只需要关注导航栏本身，而不需要关注谁修改了导航栏，这样一来就满足来上述的设计思想 **“谁用谁修改”**。
 
 ## 实现
 
