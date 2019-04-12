@@ -6,18 +6,18 @@
 [![Gmail](https://img.shields.io/badge/Gmail-@liyaoxjtu2013-red.svg?style=flat)](mail://liyaoxjtu2013@gmail.com)
 
 ## Introduction
-As we all known, `UINavigationController` is a container view controller that manages one or more child view controllers in a navigation interface. Sometimes, we just wanna change the appearance in current view controller instead of affecting the whole app. DoubleNavigationController is a library that can solve the problem above.
+As we all known, `UINavigationController` is a container view controller that manages one or more child view controllers in a navigation interface. Sometimes, we just wanna update the appearance in current view controller instead of affecting the whole app. DoubleNavigationController is a library that can solve the problem above.
 
 ## Architecture
-We can think of `UINavigationController` as a tree, and each node is a ViewController that managed by it. By using **DoubleNavigationController**, we can change the appearance of NavigationBar in current node without affecting its parent node's. However, its child nodes' NavigationBar will be affected. The relationship can be described as the picture below.
+We can think of `UINavigationController` as a tree, and each node is a ViewController that managed by it. By using **DoubleNavigationController**, we can update the appearance of NavigationBar in current node without affecting its parent node's. However, its child nodes' NavigationBar will be affected. The relationship can be described as the picture below.
 
-![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/architecture.jpeg)
+![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/Resource/architecture.jpeg)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/example_high.gif)
+![Example](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/Resource/example_high.gif)
 
 ## Usage
 
@@ -38,7 +38,7 @@ You can customize your navigation by implementing `dbn_configNavigationControlle
 }
 ```
 
-You can also change the appearance of your app's navigation at any time by using `dbn_performBatchUpdates:` in the category of `UIViewController`.
+You can also update the appearance of your app's navigation at any time by using `dbn_performBatchUpdates:` in the category of `UIViewController`.
 
 ```
 [self dbn_performBatchUpdates:^(UINavigationController * _Nullable navigationController) {
