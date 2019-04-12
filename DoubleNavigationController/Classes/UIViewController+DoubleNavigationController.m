@@ -22,6 +22,8 @@
 
 @interface UINavigationController (DoubleNavigationController_Private)
 @property (assign, nonatomic) BOOL dbn_realNavigationBarHidden;
+
+- (void)dbn_setNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated;
 @end
 
 @implementation UIViewController (DoubleNavigationController_Private) 
@@ -43,7 +45,6 @@
     }
     
     if (!self.dbn_viewAppeared) {
-        [self.navigationController setNavigationBarHidden:self.navigationController.dbn_realNavigationBarHidden animated:NO];
         __weak typeof(self) _self = self;
         if ([self respondsToSelector:@selector(dbn_configNavigationController:)]) {
             [self performSelector:@selector(dbn_configNavigationController:) withObject:self.navigationController];
@@ -55,14 +56,13 @@
         if ([self respondsToSelector:@selector(dbn_configNavigationItem:)]) {
             [self performSelector:@selector(dbn_configNavigationItem:) withObject:self.navigationItem];
         }
+        [self.navigationController dbn_setNavigationBarHidden:NO animated:NO];
+        [self setDbn_secondNavigationBarHidden:NO];
+        [self.navigationController dbn_setNavigationBarHidden:YES animated:NO];
     } else {
         [self.dbn_navigationDecoration doDecorate];
-        BOOL hidden = self.navigationController.isNavigationBarHidden;
-        self.navigationController.dbn_realNavigationBarHidden = hidden;
-        if (!hidden) {
-            [self setDbn_secondNavigationBarHidden:NO];
-            [self.navigationController setNavigationBarHidden:YES animated:NO];
-        }
+        [self setDbn_secondNavigationBarHidden:NO];
+        [self.navigationController dbn_setNavigationBarHidden:YES animated:NO];
     }
 }
 
@@ -80,14 +80,12 @@
     
     if (!self.dbn_viewAppeared) {
         self.dbn_viewAppeared = YES;
-        if (!self.navigationController.isNavigationBarHidden) {
-            [self setDbn_secondNavigationBarHidden:NO];
-        }
+        [self setDbn_secondNavigationBarHidden:YES];
+        [self.navigationController dbn_setNavigationBarHidden:self.navigationController.dbn_realNavigationBarHidden animated:NO];
     } else {
         [self setDbn_secondNavigationBarHidden:YES];
-        [self.navigationController setNavigationBarHidden:NO animated:NO];
         [self.dbn_navigationDecoration doDecorate];
-        self.navigationController.dbn_realNavigationBarHidden = self.navigationController.isNavigationBarHidden;
+        [self.navigationController dbn_setNavigationBarHidden:self.navigationController.dbn_realNavigationBarHidden animated:NO];
     }
 }
 
@@ -100,20 +98,25 @@
     }
     
     [self setDbn_secondNavigationBarHidden:NO];
-    self.navigationController.dbn_realNavigationBarHidden = self.navigationController.isNavigationBarHidden;
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [self.navigationController dbn_setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)setDbn_secondNavigationBarHidden:(BOOL)hidden {
+    if (self.navigationController.dbn_realNavigationBarHidden) {
+        self.dbn_fakeNavigationBar.hidden = YES;
+        return;
+    }
+    
+    UIView *fakeNavigationBar = self.dbn_fakeNavigationBar;
     if (!self.navigationController
-        && !self.dbn_fakeNavigationBar) {
+        && !fakeNavigationBar) {
         return;
     }
     
     if (!objc_getAssociatedObject(self, @selector(dbn_fakeNavigationBar))
         || self.dbn_needsUpdateNavigation) {
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.navigationController.navigationBar];
-        UIView *fakeNavigationBar = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        fakeNavigationBar = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         if (self.dbn_fakeNavigationBar.superview) {
             [self.dbn_fakeNavigationBar removeFromSuperview];
         }
@@ -123,8 +126,8 @@
         [self navigationBar:(UINavigationBar *)fakeNavigationBar imitate:self.navigationController.navigationBar]; // UIAppearance will be setted after the navigationBar has been added to super view
     }
     
-    [self.view bringSubviewToFront:self.dbn_fakeNavigationBar];
-    self.dbn_fakeNavigationBar.hidden = hidden;
+    [self.view bringSubviewToFront:fakeNavigationBar];
+    fakeNavigationBar.hidden = hidden;
 }
 
 - (void)navigationBar:(UINavigationBar *)navigationBar imitate:(UINavigationBar *)navigationBarImitated {
@@ -184,6 +187,19 @@
 
 
 @implementation UINavigationController (DoubleNavigationController_Private)
++ (void)load {
+    static dispatch_once_t dbnOnceToken;
+    dispatch_once(&dbnOnceToken, ^{
+        Class clz = [self class];
+        DBNSwizzleMethod(clz, @selector(setNavigationBarHidden:animated:), clz, @selector(dbn_setNavigationBarHidden:animated:));
+    });
+}
+
+- (void)dbn_setNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated {
+    self.dbn_realNavigationBarHidden = hidden;
+    [self dbn_setNavigationBarHidden:hidden animated:animated];
+}
+
 - (BOOL)dbn_realNavigationBarHidden {
     return [objc_getAssociatedObject(self, @selector(dbn_realNavigationBarHidden)) boolValue];
 }
@@ -191,7 +207,6 @@
 - (void)setDbn_realNavigationBarHidden:(BOOL)dbn_realNavigationBarHidden {
     objc_setAssociatedObject(self, @selector(dbn_realNavigationBarHidden), [NSNumber numberWithBool:dbn_realNavigationBarHidden], OBJC_ASSOCIATION_RETAIN);
 }
-
 @end
 
 
@@ -205,6 +220,11 @@
         updates(self.navigationController);
         [self.dbn_navigationDecoration addUpdates:updates];
         self.dbn_needsUpdateNavigation = YES;
+    }
+    NSArray<UIViewController *> *viewControllers = self.navigationController.viewControllers;
+    for (NSUInteger i=[viewControllers indexOfObject:self] + 1; i<[viewControllers indexOfObject:self.navigationController.topViewController] + 1; i++) {
+        [viewControllers[i].dbn_navigationDecoration addUpdates:updates];
+        viewControllers[i].dbn_needsUpdateNavigation = YES;
     }
 }
 @end

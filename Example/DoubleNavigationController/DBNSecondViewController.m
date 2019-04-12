@@ -36,11 +36,13 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-//    [self dbn_performBatchUpdates:^(UINavigationController * _Nullable navigationController) {
-//        if (navigationController) {
-//            navigationController.navigationBar.tintColor = [UIColor purpleColor];
-//        }
-//    }];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self dbn_performBatchUpdates:^(UINavigationController * _Nullable navigationController) {
+            if (navigationController) {
+                navigationController.navigationBar.barTintColor = [UIColor purpleColor];
+            }
+        }];
+    });
 }
 
 - (void)dbn_configNavigationController:(UINavigationController *)navigationController {
