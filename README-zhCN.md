@@ -1,7 +1,7 @@
 # DoubleNavigationController
 
-[![Platform](https://img.shields.io/cocoapods/p/TinyPart.svg?style=flat)](https://cocoapods.org/?q=doublenavigationcontroller)
-[![Version](https://img.shields.io/cocoapods/v/TinyPart.svg?style=flat)](https://cocoapods.org/?q=doublenavigationcontroller)
+[![Platform](https://img.shields.io/cocoapods/p/DoubleNavigationController.svg?style=flat)](https://cocoapods.org/?q=doublenavigationcontroller)
+[![Version](https://img.shields.io/cocoapods/v/DoubleNavigationController.svg?style=flat)](https://cocoapods.org/?q=doublenavigationcontroller)
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/RyanLeeLY/DoubleNavigationController/blob/master/LICENSE)
 [![Gmail](https://img.shields.io/badge/Gmail-@liyaoxjtu2013-red.svg?style=flat)](mail://liyaoxjtu2013@gmail.com)
 
